@@ -26,7 +26,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             public void buildRecipes() {
                 for (String group : ModBlocks.MOD_BLOCKS.keySet()) {
                     Block[] blocks = ModBlocks.MOD_BLOCKS.get(group);
-                    // TODO: if value array is length 5 (new base block added) add that
+                    if (blocks.length >= 5) { // if a new block form is present (e.g. sugar cane block)
+                        buildSqueezeRecipe(blocks[0], blocks[1], "", "block", group);
+                    }
                     for (int i = 0; i < blocks.length - 1; i++) {
                         String fromTier = translateTier(i);
                         String toTier = translateTier(i + 1);
