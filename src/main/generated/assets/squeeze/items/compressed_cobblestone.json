@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "squeeze:block/compressed_cobblestone"
+  }
+}

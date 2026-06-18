@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "cobblestone",
+  "ingredients": [
+    "squeeze:hardened_cobblestone"
+  ],
+  "result": {
+    "count": 9,
+    "id": "squeeze:squeezed_cobblestone"
+  }
+}
