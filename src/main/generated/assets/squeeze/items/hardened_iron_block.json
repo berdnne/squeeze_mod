@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "squeeze:block/hardened_iron_block"
+  }
+}

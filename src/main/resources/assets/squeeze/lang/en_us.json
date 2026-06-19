@@ -1,7 +1,23 @@
 {
-  "item.squeeze.gun": "Gun",
   "creativemodetab.squeeze.squeeze_items": "Squeeze",
+  "block.squeeze.compressed_stone": "Compressed Stone",
+  "block.squeeze.squeezed_stone": "Squeezed Stone",
+  "block.squeeze.hardened_stone": "Hardened Stone",
   "block.squeeze.compressed_cobblestone": "Compressed Cobblestone",
   "block.squeeze.squeezed_cobblestone": "Squeezed Cobblestone",
-  "block.squeeze.hardened_cobblestone": "Hardened Cobblestone"
+  "block.squeeze.hardened_cobblestone": "Hardened Cobblestone",
+  "block.squeeze.compressed_netherrack": "Compressed Netherrack",
+  "block.squeeze.squeezed_netherrack": "Squeezed Netherrack",
+  "block.squeeze.hardened_netherrack": "Hardened Netherrack",
+  "block.squeeze.compressed_iron_block": "Compressed Iron Block",
+  "block.squeeze.squeezed_iron_block": "Squeezed Iron Block",
+  "block.squeeze.hardened_iron_block": "Hardened Iron Block",
+  "block.squeeze.rotten_flesh_block": "Block of Rotten Flesh",
+  "block.squeeze.compressed_rotten_flesh_block": "Compressed Rotten Flesh Block",
+  "block.squeeze.squeezed_rotten_flesh_block": "Squeezed Rotten Flesh Block",
+  "block.squeeze.hardened_rotten_flesh_block": "Hardened Rotten Flesh Block",
+  "block.squeeze.sugar_cane_block": "Block of Sugar Cane",
+  "block.squeeze.compressed_sugar_cane_block": "Compressed Sugar Cane Block",
+  "block.squeeze.squeezed_sugar_cane_block": "Squeezed Sugar Cane Block",
+  "block.squeeze.hardened_sugar_cane_block": "Hardened Sugar Cane Block"
 }

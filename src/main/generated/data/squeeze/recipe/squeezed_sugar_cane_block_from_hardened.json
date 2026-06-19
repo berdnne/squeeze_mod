@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "sugar_cane_block",
+  "ingredients": [
+    "squeeze:hardened_sugar_cane_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "squeeze:squeezed_sugar_cane_block"
+  }
+}

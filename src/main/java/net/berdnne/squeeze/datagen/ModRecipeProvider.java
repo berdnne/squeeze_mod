@@ -1,5 +1,6 @@
 package net.berdnne.squeeze.datagen;
 
+import net.berdnne.squeeze.block.CompressableBlockType;
 import net.berdnne.squeeze.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -24,33 +25,54 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         return new RecipeProvider(registries, output) {
             @Override
             public void buildRecipes() {
-                for (String group : ModBlocks.MOD_BLOCKS.keySet()) {
-                    Block[] blocks = ModBlocks.MOD_BLOCKS.get(group);
-                    if (blocks.length >= 5) { // if a new block form is present (e.g. sugar cane block)
-                        buildSqueezeRecipe(blocks[0], blocks[1], "", "block", group);
-                    }
-                    for (int i = 0; i < blocks.length - 1; i++) {
-                        String fromTier = translateTier(i);
-                        String toTier = translateTier(i + 1);
-                        buildSqueezeRecipe(blocks[i], blocks[i + 1], fromTier, toTier, group);
+                for (CompressableBlockType cbt : ModBlocks.COMPRESSABLE_BLOCK_TYPES) {
+                    if (cbt.getTiers().length == 4) {
+                        buildSqueezeRecipeTypeNewBase(cbt);
+                    } else {
+                        buildSqueezeRecipeType(cbt);
                     }
                 }
-
             }
-            private void buildSqueezeRecipe(Block from, Block to, String fromTier, String toTier, String group) {
-                String sep = fromTier.isEmpty() ? "" : "_";
+            private void buildSqueezeRecipeTypeNewBase(CompressableBlockType cbt) {
+                Block[] blocks = cbt.getTiers();
+                String group = cbt.getName();
                 nineBlockStorageRecipesRecipesWithCustomUnpacking(
-                        RecipeCategory.MISC, from,
-                        RecipeCategory.MISC, to,
-                        fromTier + sep + group + "_from_" + toTier, group);
+                        RecipeCategory.MISC, cbt.getBaseItem(),
+                        RecipeCategory.MISC, blocks[0],
+                        group + "_from_block", group);
+                for (int i = 0; i < blocks.length - 1; i++) {
+                    String fromTier = translateTier(i - 1);
+                    String toTier = translateTier(i);
+                    String sep = (fromTier.isEmpty()) ? "" : "_";
+                    nineBlockStorageRecipesRecipesWithCustomUnpacking(
+                            RecipeCategory.MISC, blocks[i],
+                            RecipeCategory.MISC, blocks[i + 1],
+                            fromTier + sep + group + "_from_" + toTier, group);
+                }
+            }
+            private void buildSqueezeRecipeType(CompressableBlockType cbt) {
+                Block[] blocks = cbt.getTiers();
+                String group = cbt.getName();
+                nineBlockStorageRecipesRecipesWithCustomUnpacking(
+                        RecipeCategory.MISC, cbt.getBaseItem(),
+                        RecipeCategory.MISC, blocks[0],
+                        group + "_from_compressed", group);
+                for (int i = 0; i < blocks.length - 1; i++) {
+                    String fromTier = translateTier(i - 1);
+                    String toTier = translateTier(i);
+                    nineBlockStorageRecipesRecipesWithCustomUnpacking(
+                            RecipeCategory.MISC, blocks[i],
+                            RecipeCategory.MISC, blocks[i + 1],
+                            fromTier + "_" + group + "_from_" + toTier, group);
+                }
             }
 
             private String translateTier(int tier) {
                 return switch (tier) {
-                    case 0 -> "";
-                    case 1 -> "compressed";
-                    case 2 -> "squeezed";
-                    case 3 -> "hardened";
+                    case -1 -> "";
+                    case 0 -> "compressed";
+                    case 1 -> "squeezed";
+                    case 2 -> "hardened";
                     default -> throw new IllegalStateException("Unexpected compression tier: " + tier);
                 };
             }

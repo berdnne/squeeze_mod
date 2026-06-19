@@ -1,7 +1,16 @@
 {
   "values": [
+    "squeeze:compressed_stone",
+    "squeeze:squeezed_stone",
+    "squeeze:hardened_stone",
     "squeeze:compressed_cobblestone",
     "squeeze:squeezed_cobblestone",
-    "squeeze:hardened_cobblestone"
+    "squeeze:hardened_cobblestone",
+    "squeeze:compressed_netherrack",
+    "squeeze:squeezed_netherrack",
+    "squeeze:hardened_netherrack",
+    "squeeze:compressed_iron_block",
+    "squeeze:squeezed_iron_block",
+    "squeeze:hardened_iron_block"
   ]
 }

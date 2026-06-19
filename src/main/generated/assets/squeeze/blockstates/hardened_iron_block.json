@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "squeeze:block/hardened_iron_block"
+    }
+  }
+}

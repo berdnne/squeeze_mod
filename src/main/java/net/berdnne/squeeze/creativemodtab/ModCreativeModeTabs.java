@@ -1,6 +1,7 @@
 package net.berdnne.squeeze.creativemodtab;
 
 import net.berdnne.squeeze.Squeeze;
+import net.berdnne.squeeze.block.CompressableBlockType;
 import net.berdnne.squeeze.block.ModBlocks;
 import net.berdnne.squeeze.item.ModItems;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
@@ -10,6 +11,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 
@@ -20,8 +22,8 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModBlocks.COMPRESSED_COBBLESTONE))
                     .title(Component.translatable("creativemodetab.squeeze.squeeze_items"))
                     .displayItems((parameters, output) -> {
-                        for (Block[] blocks : ModBlocks.MOD_BLOCKS.values()) {
-                            for (Block block : blocks) {
+                        for (CompressableBlockType cbt : ModBlocks.COMPRESSABLE_BLOCK_TYPES) {
+                            for (Block block : cbt.getTiers()) {
                                 output.accept(block);
                             }
                         }

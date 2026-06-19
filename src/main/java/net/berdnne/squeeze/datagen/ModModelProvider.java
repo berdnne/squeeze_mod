@@ -1,6 +1,7 @@
 package net.berdnne.squeeze.datagen;
 
 import net.berdnne.squeeze.Squeeze;
+import net.berdnne.squeeze.block.CompressableBlockType;
 import net.berdnne.squeeze.block.ModBlocks;
 import net.berdnne.squeeze.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
@@ -27,8 +28,8 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators generator) {
-        for (Block[] blocks : ModBlocks.MOD_BLOCKS.values()) {
-            for (Block block : blocks) {
+        for (CompressableBlockType cbt : ModBlocks.COMPRESSABLE_BLOCK_TYPES) {
+            for (Block block : cbt.getTiers()) {
                 generator.createTrivialCube(block);
             }
         }

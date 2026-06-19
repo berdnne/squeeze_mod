@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "squeeze:block/hardened_sugar_cane_block"
+    }
+  }
+}

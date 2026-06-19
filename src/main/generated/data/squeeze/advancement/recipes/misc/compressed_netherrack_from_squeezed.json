@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hardened_netherrack": {
+      "conditions": {
+        "items": [
+          {
+            "items": "squeeze:hardened_netherrack"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "squeeze:compressed_netherrack_from_squeezed"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hardened_netherrack"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "squeeze:compressed_netherrack_from_squeezed"
+    ]
+  }
+}

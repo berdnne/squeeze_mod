@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "iron_block",
+  "ingredients": [
+    "squeeze:compressed_iron_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "minecraft:iron_block"
+  }
+}
