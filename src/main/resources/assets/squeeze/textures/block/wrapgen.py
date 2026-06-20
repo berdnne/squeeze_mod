@@ -2,7 +2,7 @@
 
 from PIL import Image
 
-blocks = ["stone", "cobblestone", "netherrack", "iron_block", "sugar_cane_block"]
+blocks = ["stone", "cobblestone", "netherrack", "iron_block", "sugar_cane_block", "redstone_block", "gold_block"]
 tiers = ["compressed", "squeezed", "hardened"]
 
 for block in blocks:

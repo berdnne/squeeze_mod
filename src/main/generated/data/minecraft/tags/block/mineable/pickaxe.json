@@ -11,6 +11,12 @@
     "squeeze:hardened_netherrack",
     "squeeze:compressed_iron_block",
     "squeeze:squeezed_iron_block",
-    "squeeze:hardened_iron_block"
+    "squeeze:hardened_iron_block",
+    "squeeze:compressed_redstone_block",
+    "squeeze:squeezed_redstone_block",
+    "squeeze:hardened_redstone_block",
+    "squeeze:compressed_gold_block",
+    "squeeze:squeezed_gold_block",
+    "squeeze:hardened_gold_block"
   ]
 }

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "squeeze:block/hardened_redstone_block"
+    }
+  }
+}

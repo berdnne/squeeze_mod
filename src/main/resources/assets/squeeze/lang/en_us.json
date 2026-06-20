@@ -19,5 +19,11 @@
   "block.squeeze.sugar_cane_block": "Block of Sugar Cane",
   "block.squeeze.compressed_sugar_cane_block": "Compressed Sugar Cane Block",
   "block.squeeze.squeezed_sugar_cane_block": "Squeezed Sugar Cane Block",
-  "block.squeeze.hardened_sugar_cane_block": "Hardened Sugar Cane Block"
+  "block.squeeze.hardened_sugar_cane_block": "Hardened Sugar Cane Block",
+  "block.squeeze.compressed_redstone_block": "Compressed Redstone Block",
+  "block.squeeze.squeezed_redstone_block": "Squeezed Redstone Block",
+  "block.squeeze.hardened_redstone_block": "Hardened Redstone Block",
+  "block.squeeze.compressed_gold_block": "Compressed Gold Block",
+  "block.squeeze.squeezed_gold_block": "Squeezed Gold Block",
+  "block.squeeze.hardened_gold_block": "Hardened Gold Block"
 }

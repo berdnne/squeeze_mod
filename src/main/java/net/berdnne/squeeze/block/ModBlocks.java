@@ -68,13 +68,33 @@ public class ModBlocks {
     public static final Block HARDENED_SUGAR_CANE_BLOCK = registerBlock("hardened_sugar_cane_block",
             properties -> new Block(properties.strength(2.6f)
                     .sound(SoundType.BAMBOO_WOOD)));
+    public static final Block COMPRESSED_REDSTONE_BLOCK = registerBlock("compressed_redstone_block",
+            properties -> new Block(properties.strength(6f)
+                    .requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final Block SQUEEZED_REDSTONE_BLOCK = registerBlock("squeezed_redstone_block",
+            properties -> new Block(properties.strength(7f)
+                    .requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final Block HARDENED_REDSTONE_BLOCK = registerBlock("hardened_redstone_block",
+            properties -> new Block(properties.strength(8f)
+                    .requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final Block COMPRESSED_GOLD_BLOCK = registerBlock("compressed_gold_block",
+            properties -> new Block(properties.strength(4f)
+                    .requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final Block SQUEEZED_GOLD_BLOCK = registerBlock("squeezed_gold_block",
+            properties -> new Block(properties.strength(5f)
+                    .requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final Block HARDENED_GOLD_BLOCK = registerBlock("hardened_gold_block",
+            properties -> new Block(properties.strength(6f)
+                    .requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
     public static final CompressableBlockType[] COMPRESSABLE_BLOCK_TYPES = new CompressableBlockType[]{
             new CompressableBlockType("stone", Blocks.STONE, new Block[]{COMPRESSED_STONE, SQUEEZED_STONE, HARDENED_STONE}),
             new CompressableBlockType("cobblestone", Blocks.COBBLESTONE, new Block[]{COMPRESSED_COBBLESTONE, SQUEEZED_COBBLESTONE, HARDENED_COBBLESTONE}),
             new CompressableBlockType("netherrack", Blocks.NETHERRACK, new Block[]{COMPRESSED_NETHERRACK, SQUEEZED_NETHERRACK, HARDENED_NETHERRACK}),
             new CompressableBlockType("iron_block", Blocks.IRON_BLOCK, new Block[]{COMPRESSED_IRON_BLOCK, SQUEEZED_IRON_BLOCK, HARDENED_IRON_BLOCK}),
-            new CompressableBlockType("sugar_cane_block", Items.SUGAR_CANE, new Block[]{ModBlocks.SUGAR_CANE_BLOCK, COMPRESSED_SUGAR_CANE_BLOCK, SQUEEZED_SUGAR_CANE_BLOCK, HARDENED_SUGAR_CANE_BLOCK}),
+            new CompressableBlockType("sugar_cane_block", Items.SUGAR_CANE, new Block[]{SUGAR_CANE_BLOCK, COMPRESSED_SUGAR_CANE_BLOCK, SQUEEZED_SUGAR_CANE_BLOCK, HARDENED_SUGAR_CANE_BLOCK}),
+            new CompressableBlockType("redstone_block", Blocks.REDSTONE_BLOCK, new Block[]{COMPRESSED_REDSTONE_BLOCK, SQUEEZED_REDSTONE_BLOCK, HARDENED_REDSTONE_BLOCK}),
+            new CompressableBlockType("gold_block", Blocks.GOLD_BLOCK, new Block[]{COMPRESSED_GOLD_BLOCK, SQUEEZED_GOLD_BLOCK, HARDENED_GOLD_BLOCK}),
     };
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {

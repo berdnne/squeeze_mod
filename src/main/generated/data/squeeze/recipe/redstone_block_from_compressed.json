@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "redstone_block",
+  "ingredients": [
+    "squeeze:compressed_redstone_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "minecraft:redstone_block"
+  }
+}
