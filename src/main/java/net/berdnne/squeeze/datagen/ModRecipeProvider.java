@@ -8,11 +8,8 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 
-import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
@@ -26,7 +23,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             @Override
             public void buildRecipes() {
                 for (CompressableBlockType cbt : ModBlocks.COMPRESSABLE_BLOCK_TYPES) {
-                    if (cbt.getTiers().length == 4) {
+                    if (cbt.tiers().length == 4) {
                         buildSqueezeRecipeTypeNewBase(cbt);
                     } else {
                         buildSqueezeRecipeType(cbt);
@@ -34,15 +31,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 }
             }
             private void buildSqueezeRecipeTypeNewBase(CompressableBlockType cbt) {
-                Block[] blocks = cbt.getTiers();
-                String group = cbt.getName();
+                Block[] blocks = cbt.tiers();
+                String group = cbt.name();
                 nineBlockStorageRecipesRecipesWithCustomUnpacking(
-                        RecipeCategory.MISC, cbt.getBaseItem(),
+                        RecipeCategory.MISC, cbt.baseItem(),
                         RecipeCategory.MISC, blocks[0],
                         group + "_from_block", group);
                 for (int i = 0; i < blocks.length - 1; i++) {
-                    String fromTier = translateTier(i - 1);
-                    String toTier = translateTier(i);
+                    String fromTier = translateTier(i);
+                    String toTier = translateTier(i + 1);
                     String sep = (fromTier.isEmpty()) ? "" : "_";
                     nineBlockStorageRecipesRecipesWithCustomUnpacking(
                             RecipeCategory.MISC, blocks[i],
@@ -51,15 +48,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 }
             }
             private void buildSqueezeRecipeType(CompressableBlockType cbt) {
-                Block[] blocks = cbt.getTiers();
-                String group = cbt.getName();
+                Block[] blocks = cbt.tiers();
+                String group = cbt.name();
                 nineBlockStorageRecipesRecipesWithCustomUnpacking(
-                        RecipeCategory.MISC, cbt.getBaseItem(),
+                        RecipeCategory.MISC, cbt.baseItem(),
                         RecipeCategory.MISC, blocks[0],
                         group + "_from_compressed", group);
                 for (int i = 0; i < blocks.length - 1; i++) {
-                    String fromTier = translateTier(i - 1);
-                    String toTier = translateTier(i);
+                    String fromTier = translateTier(i);
+                    String toTier = translateTier(i + 1);
+                    //String sep = (fromTier.isEmpty()) ? "" : "_";
                     nineBlockStorageRecipesRecipesWithCustomUnpacking(
                             RecipeCategory.MISC, blocks[i],
                             RecipeCategory.MISC, blocks[i + 1],
@@ -69,10 +67,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
             private String translateTier(int tier) {
                 return switch (tier) {
-                    case -1 -> "";
-                    case 0 -> "compressed";
-                    case 1 -> "squeezed";
-                    case 2 -> "hardened";
+                    case 0 -> "";
+                    case 1 -> "compressed";
+                    case 2 -> "squeezed";
+                    case 3 -> "hardened";
                     default -> throw new IllegalStateException("Unexpected compression tier: " + tier);
                 };
             }
