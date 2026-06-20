@@ -1,12 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "iron_block",
+  "group": "netherrack",
   "ingredients": [
-    "squeeze:squeezed_iron_block"
+    "squeeze:hardened_netherrack"
   ],
   "result": {
     "count": 9,
-    "id": "squeeze:compressed_iron_block"
+    "id": "squeeze:squeezed_netherrack"
   }
 }

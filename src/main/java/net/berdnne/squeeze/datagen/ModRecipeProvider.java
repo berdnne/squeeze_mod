@@ -24,22 +24,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             public void buildRecipes() {
                 for (CompressableBlockType cbt : ModBlocks.COMPRESSABLE_BLOCK_TYPES) {
                     if (cbt.tiers().length == 4) {
-                        buildSqueezeRecipeTypeNewBase(cbt);
+                        buildSqueezeRecipeTypeWithNewBase(cbt);
                     } else {
                         buildSqueezeRecipeType(cbt);
                     }
                 }
             }
-            private void buildSqueezeRecipeTypeNewBase(CompressableBlockType cbt) {
+            private void buildSqueezeRecipeTypeWithNewBase(CompressableBlockType cbt) {
                 Block[] blocks = cbt.tiers();
                 String group = cbt.name();
                 nineBlockStorageRecipesRecipesWithCustomUnpacking(
                         RecipeCategory.MISC, cbt.baseItem(),
                         RecipeCategory.MISC, blocks[0],
-                        group + "_from_block", group);
+                        group.replace("_block", "") + "_from_block", group);
                 for (int i = 0; i < blocks.length - 1; i++) {
-                    String fromTier = translateTier(i);
-                    String toTier = translateTier(i + 1);
+                    String fromTier = translateTier(i - 1);
+                    String toTier = translateTier(i);
                     String sep = (fromTier.isEmpty()) ? "" : "_";
                     nineBlockStorageRecipesRecipesWithCustomUnpacking(
                             RecipeCategory.MISC, blocks[i],
@@ -67,10 +67,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
             private String translateTier(int tier) {
                 return switch (tier) {
-                    case 0 -> "";
-                    case 1 -> "compressed";
-                    case 2 -> "squeezed";
-                    case 3 -> "hardened";
+                    case -1 -> "";
+                    case 0 -> "compressed";
+                    case 1 -> "squeezed";
+                    case 2 -> "hardened";
                     default -> throw new IllegalStateException("Unexpected compression tier: " + tier);
                 };
             }

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_squeezed_iron_block": {
+    "has_hardened_netherrack": {
       "conditions": {
         "items": [
           {
-            "items": "squeeze:squeezed_iron_block"
+            "items": "squeeze:hardened_netherrack"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:_iron_block_from_compressed"
+        "recipe": "squeeze:squeezed_netherrack_from_hardened"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_squeezed_iron_block"
+      "has_hardened_netherrack"
     ]
   ],
   "rewards": {
     "recipes": [
-      "squeeze:_iron_block_from_compressed"
+      "squeeze:squeezed_netherrack_from_hardened"
     ]
   }
 }

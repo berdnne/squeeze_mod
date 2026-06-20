@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_squeezed_netherrack": {
+    "has_hardened_cobblestone": {
       "conditions": {
         "items": [
           {
-            "items": "squeeze:squeezed_netherrack"
+            "items": "squeeze:hardened_cobblestone"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:_netherrack_from_compressed"
+        "recipe": "squeeze:squeezed_cobblestone_from_hardened"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_squeezed_netherrack"
+      "has_hardened_cobblestone"
     ]
   ],
   "rewards": {
     "recipes": [
-      "squeeze:_netherrack_from_compressed"
+      "squeeze:squeezed_cobblestone_from_hardened"
     ]
   }
 }

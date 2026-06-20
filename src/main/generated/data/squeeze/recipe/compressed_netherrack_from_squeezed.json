@@ -3,10 +3,10 @@
   "category": "misc",
   "group": "netherrack",
   "ingredients": [
-    "squeeze:hardened_netherrack"
+    "squeeze:squeezed_netherrack"
   ],
   "result": {
     "count": 9,
-    "id": "squeeze:squeezed_netherrack"
+    "id": "squeeze:compressed_netherrack"
   }
 }

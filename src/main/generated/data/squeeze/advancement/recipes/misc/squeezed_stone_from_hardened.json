@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_squeezed_cobblestone": {
+    "has_hardened_stone": {
       "conditions": {
         "items": [
           {
-            "items": "squeeze:squeezed_cobblestone"
+            "items": "squeeze:hardened_stone"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:_cobblestone_from_compressed"
+        "recipe": "squeeze:squeezed_stone_from_hardened"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_squeezed_cobblestone"
+      "has_hardened_stone"
     ]
   ],
   "rewards": {
     "recipes": [
-      "squeeze:_cobblestone_from_compressed"
+      "squeeze:squeezed_stone_from_hardened"
     ]
   }
 }

@@ -3,10 +3,10 @@
   "category": "misc",
   "group": "stone",
   "ingredients": [
-    "squeeze:hardened_stone"
+    "squeeze:squeezed_stone"
   ],
   "result": {
     "count": 9,
-    "id": "squeeze:squeezed_stone"
+    "id": "squeeze:compressed_stone"
   }
 }

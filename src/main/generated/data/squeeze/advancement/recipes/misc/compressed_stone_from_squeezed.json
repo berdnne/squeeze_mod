@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_hardened_stone": {
+    "has_squeezed_stone": {
       "conditions": {
         "items": [
           {
-            "items": "squeeze:hardened_stone"
+            "items": "squeeze:squeezed_stone"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_hardened_stone"
+      "has_squeezed_stone"
     ]
   ],
   "rewards": {

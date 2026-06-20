@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_hardened_netherrack": {
+    "has_squeezed_netherrack": {
       "conditions": {
         "items": [
           {
-            "items": "squeeze:hardened_netherrack"
+            "items": "squeeze:squeezed_netherrack"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_hardened_netherrack"
+      "has_squeezed_netherrack"
     ]
   ],
   "rewards": {

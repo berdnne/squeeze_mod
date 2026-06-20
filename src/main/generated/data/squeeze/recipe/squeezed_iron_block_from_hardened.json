@@ -1,12 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "stone",
+  "group": "iron_block",
   "ingredients": [
-    "squeeze:squeezed_stone"
+    "squeeze:hardened_iron_block"
   ],
   "result": {
     "count": 9,
-    "id": "squeeze:compressed_stone"
+    "id": "squeeze:squeezed_iron_block"
   }
 }

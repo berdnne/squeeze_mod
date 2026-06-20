@@ -1,12 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "netherrack",
+  "group": "cobblestone",
   "ingredients": [
-    "squeeze:squeezed_netherrack"
+    "squeeze:hardened_cobblestone"
   ],
   "result": {
     "count": 9,
-    "id": "squeeze:compressed_netherrack"
+    "id": "squeeze:squeezed_cobblestone"
   }
 }

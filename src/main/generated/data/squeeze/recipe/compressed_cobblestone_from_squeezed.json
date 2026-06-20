@@ -3,10 +3,10 @@
   "category": "misc",
   "group": "cobblestone",
   "ingredients": [
-    "squeeze:hardened_cobblestone"
+    "squeeze:squeezed_cobblestone"
   ],
   "result": {
     "count": 9,
-    "id": "squeeze:squeezed_cobblestone"
+    "id": "squeeze:compressed_cobblestone"
   }
 }
