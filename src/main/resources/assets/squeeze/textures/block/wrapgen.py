@@ -1,13 +1,12 @@
 # Layers the various wraps over all compressable blocks and saves
 
 from PIL import Image
-import os
 
-blocks = ["cobblestone", "stone"]
+blocks = ["stone", "cobblestone", "netherrack", "iron_block", "sugar_cane_block"]
 tiers = ["compressed", "squeezed", "hardened"]
 
 for block in blocks:
-    base = Image.open(f"{block}_base.png").convert("RGBA")
     for tier in tiers:
-        wrap = Image.open(f"{tier}_wrap.png").convert("RGBA")
+        base = Image.open(f"bases/{block}.png").convert("RGBA")
+        wrap = Image.open(f"wraps/{tier}.png").convert("RGBA")
         Image.alpha_composite(base, wrap).save(f"{tier}_{block}.png")
