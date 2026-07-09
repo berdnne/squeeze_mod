@@ -25,5 +25,8 @@
   "block.squeeze.hardened_redstone_block": "Hardened Redstone Block",
   "block.squeeze.compressed_gold_block": "Compressed Gold Block",
   "block.squeeze.squeezed_gold_block": "Squeezed Gold Block",
-  "block.squeeze.hardened_gold_block": "Hardened Gold Block"
+  "block.squeeze.hardened_gold_block": "Hardened Gold Block",
+  "block.squeeze.compressed_bamboo_block": "Compressed Bamboo Block",
+  "block.squeeze.squeezed_bamboo_block": "Squeezed Bamboo Block",
+  "block.squeeze.hardened_bamboo_block": "Hardened Bamboo Block"
 }

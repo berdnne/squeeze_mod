@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "bamboo_block",
+  "ingredients": [
+    "squeeze:squeezed_bamboo_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "squeeze:compressed_bamboo_block"
+  }
+}

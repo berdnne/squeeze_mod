@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Block;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -41,6 +42,10 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(COMPRESSED_SUGAR_CANE_BLOCK)
                 .add(SQUEEZED_SUGAR_CANE_BLOCK)
                 .add(HARDENED_SUGAR_CANE_BLOCK);
+        valueLookupBuilder(BlockTags.MINEABLE_WITH_AXE)
+                .add(COMPRESSED_BAMBOO_BLOCK)
+                .add(SQUEEZED_BAMBOO_BLOCK)
+                .add(COMPRESSED_BAMBOO_BLOCK);
         valueLookupBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(COMPRESSED_IRON_BLOCK)
                 .add(SQUEEZED_IRON_BLOCK)
