@@ -95,6 +95,51 @@ public class ModBlocks {
     public static final Block HARDENED_BAMBOO_BLOCK = registerBlock("hardened_bamboo_block",
             properties -> new Block(properties.strength(4f)
                     .sound(SoundType.BAMBOO_WOOD)));
+    public static final Block COMPRESSED_DEEPSLATE = registerBlock("compressed_deepslate",
+            properties -> new Block(properties.strength(4f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final Block SQUEEZED_DEEPSLATE = registerBlock("squeezed_deepslate",
+            properties -> new Block(properties.strength(5f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final Block HARDENED_DEEPSLATE = registerBlock("hardened_deepslate",
+            properties -> new Block(properties.strength(6f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final Block COMPRESSED_COBBLED_DEEPSLATE = registerBlock("compressed_cobbled_deepslate",
+            properties -> new Block(properties.strength(4.5f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final Block SQUEEZED_COBBLED_DEEPSLATE = registerBlock("squeezed_cobbled_deepslate",
+            properties -> new Block(properties.strength(5.5f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final Block HARDENED_COBBLED_DEEPSLATE = registerBlock("hardened_cobbled_deepslate",
+            properties -> new Block(properties.strength(6.5f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final Block COMPRESSED_DIRT = registerBlock("compressed_dirt",
+            properties -> new Block(properties.strength(1.5f)
+                    .sound(SoundType.GRAVEL)));
+    public static final Block SQUEEZED_DIRT = registerBlock("squeezed_dirt",
+            properties -> new Block(properties.strength(2.5f)
+                    .sound(SoundType.GRAVEL)));
+    public static final Block HARDENED_DIRT = registerBlock("hardened_dirt",
+            properties -> new Block(properties.strength(3.5f)
+                    .sound(SoundType.GRAVEL)));
+    public static final Block COMPRESSED_GRASS_BLOCK = registerBlock("compressed_grass_block",
+            properties -> new Block(properties.strength(1.5f)
+                    .sound(SoundType.GRASS)));
+    public static final Block SQUEEZED_GRASS_BLOCK = registerBlock("squeezed_grass_block",
+            properties -> new Block(properties.strength(2.5f)
+                    .sound(SoundType.GRASS)));
+    public static final Block HARDENED_GRASS_BLOCK = registerBlock("hardened_grass_block",
+            properties -> new Block(properties.strength(3.5f)
+                    .sound(SoundType.GRASS)));
+    public static final Block COMPRESSED_CACTUS = registerBlock("compressed_cactus",
+            properties -> new Block(properties.strength(1.4f)
+                    .sound(SoundType.WOOL)));
+    public static final Block SQUEEZED_CACTUS = registerBlock("squeezed_cactus",
+            properties -> new Block(properties.strength(2.4f)
+                    .sound(SoundType.WOOL)));
+    public static final Block HARDENED_CACTUS = registerBlock("hardened_cactus",
+            properties -> new Block(properties.strength(3.4f)
+                    .sound(SoundType.WOOL)));
 
     public static final CompressableBlockType[] COMPRESSABLE_BLOCK_TYPES = new CompressableBlockType[]{
             new CompressableBlockType("stone", Blocks.STONE, new Block[]{COMPRESSED_STONE, SQUEEZED_STONE, HARDENED_STONE}),
@@ -105,6 +150,11 @@ public class ModBlocks {
             new CompressableBlockType("redstone_block", Blocks.REDSTONE_BLOCK, new Block[]{COMPRESSED_REDSTONE_BLOCK, SQUEEZED_REDSTONE_BLOCK, HARDENED_REDSTONE_BLOCK}),
             new CompressableBlockType("gold_block", Blocks.GOLD_BLOCK, new Block[]{COMPRESSED_GOLD_BLOCK, SQUEEZED_GOLD_BLOCK, HARDENED_GOLD_BLOCK}),
             new CompressableBlockType("bamboo_block", Blocks.BAMBOO_BLOCK, new Block[]{COMPRESSED_BAMBOO_BLOCK, SQUEEZED_BAMBOO_BLOCK, HARDENED_BAMBOO_BLOCK}),
+            new CompressableBlockType("deepslate", Blocks.DEEPSLATE, new Block[]{COMPRESSED_DEEPSLATE, SQUEEZED_DEEPSLATE, HARDENED_DEEPSLATE}),
+            new CompressableBlockType("cobbled_deepslate", Blocks.COBBLED_DEEPSLATE, new Block[]{COMPRESSED_COBBLED_DEEPSLATE, SQUEEZED_COBBLED_DEEPSLATE, HARDENED_COBBLED_DEEPSLATE}),
+            new CompressableBlockType("dirt", Blocks.DIRT, new Block[]{COMPRESSED_DIRT, SQUEEZED_DIRT, HARDENED_DIRT}),
+            new CompressableBlockType("grass_block", Blocks.GRASS_BLOCK, new Block[]{COMPRESSED_GRASS_BLOCK, SQUEEZED_GRASS_BLOCK, HARDENED_GRASS_BLOCK}),
+            new CompressableBlockType("cactus", Blocks.CACTUS, new Block[]{COMPRESSED_CACTUS, SQUEEZED_CACTUS, HARDENED_CACTUS}),
     };
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {

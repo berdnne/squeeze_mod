@@ -1,0 +1,10 @@
+{
+  "values": [
+    "squeeze:compressed_dirt",
+    "squeeze:squeezed_dirt",
+    "squeeze:hardened_dirt",
+    "squeeze:compressed_grass_block",
+    "squeeze:squeezed_grass_block",
+    "squeeze:hardened_grass_block"
+  ]
+}

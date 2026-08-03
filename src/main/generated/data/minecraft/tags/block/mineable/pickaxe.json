@@ -17,6 +17,12 @@
     "squeeze:hardened_redstone_block",
     "squeeze:compressed_gold_block",
     "squeeze:squeezed_gold_block",
-    "squeeze:hardened_gold_block"
+    "squeeze:hardened_gold_block",
+    "squeeze:compressed_deepslate",
+    "squeeze:squeezed_deepslate",
+    "squeeze:hardened_deepslate",
+    "squeeze:compressed_cobbled_deepslate",
+    "squeeze:squeezed_cobbled_deepslate",
+    "squeeze:hardened_cobbled_deepslate"
   ]
 }

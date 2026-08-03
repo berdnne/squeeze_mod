@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_squeezed_cactus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "squeeze:squeezed_cactus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "squeeze:hardened_cactus"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_squeezed_cactus"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "squeeze:hardened_cactus"
+    ]
+  }
+}

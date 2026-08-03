@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_compressed_dirt": {
+      "conditions": {
+        "items": [
+          {
+            "items": "squeeze:compressed_dirt"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "squeeze:dirt_from_compressed"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_compressed_dirt"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "squeeze:dirt_from_compressed"
+    ]
+  }
+}

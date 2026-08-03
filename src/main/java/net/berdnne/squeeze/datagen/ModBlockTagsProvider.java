@@ -36,7 +36,13 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(HARDENED_REDSTONE_BLOCK)
                 .add(COMPRESSED_GOLD_BLOCK)
                 .add(SQUEEZED_GOLD_BLOCK)
-                .add(HARDENED_GOLD_BLOCK);
+                .add(HARDENED_GOLD_BLOCK)
+                .add(COMPRESSED_DEEPSLATE)
+                .add(SQUEEZED_DEEPSLATE)
+                .add(HARDENED_DEEPSLATE)
+                .add(COMPRESSED_COBBLED_DEEPSLATE)
+                .add(SQUEEZED_COBBLED_DEEPSLATE)
+                .add(HARDENED_COBBLED_DEEPSLATE);
         valueLookupBuilder(BlockTags.MINEABLE_WITH_HOE)
                 .add(SUGAR_CANE_BLOCK)
                 .add(COMPRESSED_SUGAR_CANE_BLOCK)
@@ -56,5 +62,12 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(COMPRESSED_GOLD_BLOCK)
                 .add(SQUEEZED_GOLD_BLOCK)
                 .add(HARDENED_GOLD_BLOCK);
+        valueLookupBuilder(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(COMPRESSED_DIRT)
+                .add(SQUEEZED_DIRT)
+                .add(HARDENED_DIRT)
+                .add(COMPRESSED_GRASS_BLOCK)
+                .add(SQUEEZED_GRASS_BLOCK)
+                .add(HARDENED_GRASS_BLOCK);
     }
 }

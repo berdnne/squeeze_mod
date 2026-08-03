@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "dirt",
+  "ingredients": [
+    "squeeze:hardened_dirt"
+  ],
+  "result": {
+    "count": 9,
+    "id": "squeeze:squeezed_dirt"
+  }
+}

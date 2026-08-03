@@ -28,5 +28,20 @@
   "block.squeeze.hardened_gold_block": "Hardened Gold Block",
   "block.squeeze.compressed_bamboo_block": "Compressed Bamboo Block",
   "block.squeeze.squeezed_bamboo_block": "Squeezed Bamboo Block",
-  "block.squeeze.hardened_bamboo_block": "Hardened Bamboo Block"
+  "block.squeeze.hardened_bamboo_block": "Hardened Bamboo Block",
+  "block.squeeze.compressed_deepslate": "Compressed Deepslate",
+  "block.squeeze.squeezed_deepslate": "Squeezed Deepslate",
+  "block.squeeze.hardened_deepslate": "Hardened Deepslate",
+  "block.squeeze.compressed_cobbled_deepslate": "Compressed Cobbled Deepslate",
+  "block.squeeze.squeezed_cobbled_deepslate": "Squeezed Cobbled Deepslate",
+  "block.squeeze.hardened_cobbled_deepslate": "Hardened Cobbled Deepslate",
+  "block.squeeze.compressed_dirt": "Compressed Dirt",
+  "block.squeeze.squeezed_dirt": "Squeezed Dirt",
+  "block.squeeze.hardened_dirt": "Hardened Dirt",
+  "block.squeeze.compressed_grass_block": "Compressed Grass Block",
+  "block.squeeze.squeezed_grass_block": "Squeezed Grass Block",
+  "block.squeeze.hardened_grass_block": "Hardened Grass Block",
+  "block.squeeze.compressed_cactus": "Compressed Cactus",
+  "block.squeeze.squeezed_cactus": "Squeezed Cactus",
+  "block.squeeze.hardened_cactus": "Hardened Cactus"
 }
