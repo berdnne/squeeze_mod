@@ -68,6 +68,10 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(HARDENED_DIRT)
                 .add(COMPRESSED_GRASS_BLOCK)
                 .add(SQUEEZED_GRASS_BLOCK)
-                .add(HARDENED_GRASS_BLOCK);
+                .add(HARDENED_GRASS_BLOCK)
+                .add(ROTTEN_FLESH_BLOCK)
+                .add(COMPRESSED_ROTTEN_FLESH_BLOCK)
+                .add(SQUEEZED_ROTTEN_FLESH_BLOCK)
+                .add(HARDENED_ROTTEN_FLESH_BLOCK);
     }
 }

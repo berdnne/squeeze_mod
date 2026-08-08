@@ -5,6 +5,10 @@
     "squeeze:hardened_dirt",
     "squeeze:compressed_grass_block",
     "squeeze:squeezed_grass_block",
-    "squeeze:hardened_grass_block"
+    "squeeze:hardened_grass_block",
+    "squeeze:rotten_flesh_block",
+    "squeeze:compressed_rotten_flesh_block",
+    "squeeze:squeezed_rotten_flesh_block",
+    "squeeze:hardened_rotten_flesh_block"
   ]
 }
