@@ -19,27 +19,9 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         for (CompressableBlockType cbt : COMPRESSABLE_BLOCK_TYPES) {
-            switch (cbt.tool()) { // this is hideous but it works
-                case PICKAXE -> {
-                    for (Block block : cbt.tiers()) {
-                        tag(BlockTags.MINEABLE_WITH_PICKAXE).add(getRK(block));
-                    }
-                }
-                case AXE -> {
-                    for (Block block : cbt.tiers()) {
-                        tag(BlockTags.MINEABLE_WITH_AXE).add(getRK(block));
-                    }
-                }
-                case SHOVEL -> {
-                    for (Block block : cbt.tiers()) {
-                        tag(BlockTags.MINEABLE_WITH_SHOVEL).add(getRK(block));
-                    }
-                }
-                case HOE -> {
-                    for (Block block : cbt.tiers()) {
-                        tag(BlockTags.MINEABLE_WITH_HOE).add(getRK(block));
-                    }
-                }
+            if (cbt.tool() == null) return;
+            for (Block block : cbt.tiers()) {
+                tag(cbt.tool()).add(getRK(block));
             }
         }
         tag(BlockTags.NEEDS_STONE_TOOL)
