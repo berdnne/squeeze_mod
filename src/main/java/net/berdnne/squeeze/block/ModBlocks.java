@@ -70,16 +70,16 @@ public class ModBlocks {
             properties -> new Block(properties.strength(2.6f)
                     .sound(SoundType.BAMBOO_WOOD)));
     public static final Block ROTTEN_FLESH_BLOCK = registerBlock("rotten_flesh_block",
-            properties -> new Block(properties.strength(1f)
+            properties -> new Block(properties.strength(0.5f)
                     .sound(SoundType.CORAL_BLOCK)));
     public static final Block COMPRESSED_ROTTEN_FLESH_BLOCK = registerBlock("compressed_rotten_flesh_block",
-            properties -> new Block(properties.strength(2f)
+            properties -> new Block(properties.strength(1.5f)
                     .sound(SoundType.CORAL_BLOCK)));
     public static final Block SQUEEZED_ROTTEN_FLESH_BLOCK = registerBlock("squeezed_rotten_flesh_block",
-            properties -> new Block(properties.strength(3f)
+            properties -> new Block(properties.strength(2.5f)
                     .sound(SoundType.CORAL_BLOCK)));
     public static final Block HARDENED_ROTTEN_FLESH_BLOCK = registerBlock("hardened_rotten_flesh_block",
-            properties -> new Block(properties.strength(4f)
+            properties -> new Block(properties.strength(3.5f)
                     .sound(SoundType.CORAL_BLOCK)));
     public static final Block COMPRESSED_REDSTONE_BLOCK = registerBlock("compressed_redstone_block",
             properties -> new Block(properties.strength(6f)
