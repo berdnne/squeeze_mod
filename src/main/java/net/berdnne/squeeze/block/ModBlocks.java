@@ -68,6 +68,18 @@ public class ModBlocks {
     public static final Block HARDENED_SUGAR_CANE_BLOCK = registerBlock("hardened_sugar_cane_block",
             properties -> new Block(properties.strength(2.6f)
                     .sound(SoundType.BAMBOO_WOOD)));
+    public static final Block ROTTEN_FLESH_BLOCK = registerBlock("rotten_flesh_block",
+            properties -> new Block(properties.strength(1f)
+                    .sound(SoundType.CORAL_BLOCK)));
+    public static final Block COMPRESSED_ROTTEN_FLESH_BLOCK = registerBlock("compressed_rotten_flesh_block",
+            properties -> new Block(properties.strength(2f)
+                    .sound(SoundType.CORAL_BLOCK)));
+    public static final Block SQUEEZED_ROTTEN_FLESH_BLOCK = registerBlock("squeezed_rotten_flesh_block",
+            properties -> new Block(properties.strength(3f)
+                    .sound(SoundType.CORAL_BLOCK)));
+    public static final Block HARDENED_ROTTEN_FLESH_BLOCK = registerBlock("hardened_rotten_flesh_block",
+            properties -> new Block(properties.strength(4f)
+                    .sound(SoundType.CORAL_BLOCK)));
     public static final Block COMPRESSED_REDSTONE_BLOCK = registerBlock("compressed_redstone_block",
             properties -> new Block(properties.strength(6f)
                     .requiresCorrectToolForDrops().sound(SoundType.METAL)));
@@ -155,6 +167,7 @@ public class ModBlocks {
             new CompressableBlockType("dirt", Blocks.DIRT, new Block[]{COMPRESSED_DIRT, SQUEEZED_DIRT, HARDENED_DIRT}),
             new CompressableBlockType("grass_block", Blocks.GRASS_BLOCK, new Block[]{COMPRESSED_GRASS_BLOCK, SQUEEZED_GRASS_BLOCK, HARDENED_GRASS_BLOCK}),
             new CompressableBlockType("cactus", Blocks.CACTUS, new Block[]{COMPRESSED_CACTUS, SQUEEZED_CACTUS, HARDENED_CACTUS}),
+            new CompressableBlockType("rotten_flesh", Items.ROTTEN_FLESH, new Block[]{ROTTEN_FLESH_BLOCK, COMPRESSED_ROTTEN_FLESH_BLOCK, SQUEEZED_ROTTEN_FLESH_BLOCK, HARDENED_ROTTEN_FLESH_BLOCK}),
     };
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
