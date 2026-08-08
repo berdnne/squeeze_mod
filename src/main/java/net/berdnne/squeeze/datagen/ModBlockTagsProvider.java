@@ -1,8 +1,6 @@
 package net.berdnne.squeeze.datagen;
 
 import net.berdnne.squeeze.block.CompressableBlockType;
-import net.berdnne.squeeze.block.Mineable;
-import net.berdnne.squeeze.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
