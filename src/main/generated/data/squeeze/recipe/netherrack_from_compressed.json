@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "misc",
   "group": "netherrack",
   "ingredients": [
     "squeeze:compressed_netherrack"

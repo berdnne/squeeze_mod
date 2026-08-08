@@ -23,6 +23,10 @@ public class ModItems {
                 function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, itemId))));
     }
 
+    public static ResourceKey<Item> getRK(Item item) {
+        return BuiltInRegistries.ITEM.getResourceKey(item).get();
+    }
+
     public static void registerModItems() {
         Squeeze.LOGGER.info("Registering Mod Items for " + Squeeze.MOD_ID);
 

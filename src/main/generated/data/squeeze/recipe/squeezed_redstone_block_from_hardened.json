@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "misc",
   "group": "redstone_block",
   "ingredients": [
     "squeeze:hardened_redstone_block"

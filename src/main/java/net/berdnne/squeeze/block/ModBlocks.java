@@ -184,6 +184,10 @@ public class ModBlocks {
                         .setId(ResourceKey.create(Registries.ITEM, block_id))));
     }
 
+    public static ResourceKey<Block> getRK(Block block) {
+        return BuiltInRegistries.BLOCK.getResourceKey(block).get();
+    }
+
     public static void registerModBlocks() {
         Squeeze.LOGGER.info("Registering Mod Blocks for " + Squeeze.MOD_ID);
     }

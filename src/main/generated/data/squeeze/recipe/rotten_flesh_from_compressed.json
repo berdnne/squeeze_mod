@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "misc",
   "group": "rotten_flesh",
   "ingredients": [
     "squeeze:compressed_rotten_flesh_block"

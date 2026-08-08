@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "misc",
   "group": "gold_block",
   "ingredients": [
     "squeeze:squeezed_gold_block"
