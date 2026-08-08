@@ -6,6 +6,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -69,16 +70,16 @@ public class ModBlocks {
             properties -> new Block(properties.strength(2.6f)
                     .sound(SoundType.BAMBOO_WOOD)));
     public static final Block ROTTEN_FLESH_BLOCK = registerBlock("rotten_flesh_block",
-            properties -> new Block(properties.strength(1f)
+            properties -> new Block(properties.strength(0.5f)
                     .sound(SoundType.CORAL_BLOCK)));
     public static final Block COMPRESSED_ROTTEN_FLESH_BLOCK = registerBlock("compressed_rotten_flesh_block",
-            properties -> new Block(properties.strength(2f)
+            properties -> new Block(properties.strength(1.5f)
                     .sound(SoundType.CORAL_BLOCK)));
     public static final Block SQUEEZED_ROTTEN_FLESH_BLOCK = registerBlock("squeezed_rotten_flesh_block",
-            properties -> new Block(properties.strength(3f)
+            properties -> new Block(properties.strength(2.5f)
                     .sound(SoundType.CORAL_BLOCK)));
     public static final Block HARDENED_ROTTEN_FLESH_BLOCK = registerBlock("hardened_rotten_flesh_block",
-            properties -> new Block(properties.strength(4f)
+            properties -> new Block(properties.strength(3.5f)
                     .sound(SoundType.CORAL_BLOCK)));
     public static final Block COMPRESSED_REDSTONE_BLOCK = registerBlock("compressed_redstone_block",
             properties -> new Block(properties.strength(6f)
@@ -154,20 +155,20 @@ public class ModBlocks {
                     .sound(SoundType.WOOL)));
 
     public static final CompressableBlockType[] COMPRESSABLE_BLOCK_TYPES = new CompressableBlockType[]{
-            new CompressableBlockType("stone", Blocks.STONE, new Block[]{COMPRESSED_STONE, SQUEEZED_STONE, HARDENED_STONE}),
-            new CompressableBlockType("cobblestone", Blocks.COBBLESTONE, new Block[]{COMPRESSED_COBBLESTONE, SQUEEZED_COBBLESTONE, HARDENED_COBBLESTONE}),
-            new CompressableBlockType("netherrack", Blocks.NETHERRACK, new Block[]{COMPRESSED_NETHERRACK, SQUEEZED_NETHERRACK, HARDENED_NETHERRACK}),
-            new CompressableBlockType("iron_block", Blocks.IRON_BLOCK, new Block[]{COMPRESSED_IRON_BLOCK, SQUEEZED_IRON_BLOCK, HARDENED_IRON_BLOCK}),
-            new CompressableBlockType("sugar_cane_block", Items.SUGAR_CANE, new Block[]{SUGAR_CANE_BLOCK, COMPRESSED_SUGAR_CANE_BLOCK, SQUEEZED_SUGAR_CANE_BLOCK, HARDENED_SUGAR_CANE_BLOCK}),
-            new CompressableBlockType("redstone_block", Blocks.REDSTONE_BLOCK, new Block[]{COMPRESSED_REDSTONE_BLOCK, SQUEEZED_REDSTONE_BLOCK, HARDENED_REDSTONE_BLOCK}),
-            new CompressableBlockType("gold_block", Blocks.GOLD_BLOCK, new Block[]{COMPRESSED_GOLD_BLOCK, SQUEEZED_GOLD_BLOCK, HARDENED_GOLD_BLOCK}),
-            new CompressableBlockType("bamboo_block", Blocks.BAMBOO_BLOCK, new Block[]{COMPRESSED_BAMBOO_BLOCK, SQUEEZED_BAMBOO_BLOCK, HARDENED_BAMBOO_BLOCK}),
-            new CompressableBlockType("deepslate", Blocks.DEEPSLATE, new Block[]{COMPRESSED_DEEPSLATE, SQUEEZED_DEEPSLATE, HARDENED_DEEPSLATE}),
-            new CompressableBlockType("cobbled_deepslate", Blocks.COBBLED_DEEPSLATE, new Block[]{COMPRESSED_COBBLED_DEEPSLATE, SQUEEZED_COBBLED_DEEPSLATE, HARDENED_COBBLED_DEEPSLATE}),
-            new CompressableBlockType("dirt", Blocks.DIRT, new Block[]{COMPRESSED_DIRT, SQUEEZED_DIRT, HARDENED_DIRT}),
-            new CompressableBlockType("grass_block", Blocks.GRASS_BLOCK, new Block[]{COMPRESSED_GRASS_BLOCK, SQUEEZED_GRASS_BLOCK, HARDENED_GRASS_BLOCK}),
-            new CompressableBlockType("cactus", Blocks.CACTUS, new Block[]{COMPRESSED_CACTUS, SQUEEZED_CACTUS, HARDENED_CACTUS}),
-            new CompressableBlockType("rotten_flesh", Items.ROTTEN_FLESH, new Block[]{ROTTEN_FLESH_BLOCK, COMPRESSED_ROTTEN_FLESH_BLOCK, SQUEEZED_ROTTEN_FLESH_BLOCK, HARDENED_ROTTEN_FLESH_BLOCK}),
+            new CompressableBlockType("stone", Blocks.STONE, BlockTags.MINEABLE_WITH_PICKAXE, new Block[]{COMPRESSED_STONE, SQUEEZED_STONE, HARDENED_STONE}),
+            new CompressableBlockType("cobblestone", Blocks.COBBLESTONE, BlockTags.MINEABLE_WITH_PICKAXE, new Block[]{COMPRESSED_COBBLESTONE, SQUEEZED_COBBLESTONE, HARDENED_COBBLESTONE}),
+            new CompressableBlockType("netherrack", Blocks.NETHERRACK, BlockTags.MINEABLE_WITH_PICKAXE, new Block[]{COMPRESSED_NETHERRACK, SQUEEZED_NETHERRACK, HARDENED_NETHERRACK}),
+            new CompressableBlockType("iron_block", Blocks.IRON_BLOCK, BlockTags.MINEABLE_WITH_PICKAXE, new Block[]{COMPRESSED_IRON_BLOCK, SQUEEZED_IRON_BLOCK, HARDENED_IRON_BLOCK}),
+            new CompressableBlockType("sugar_cane_block", Items.SUGAR_CANE, BlockTags.MINEABLE_WITH_HOE, new Block[]{SUGAR_CANE_BLOCK, COMPRESSED_SUGAR_CANE_BLOCK, SQUEEZED_SUGAR_CANE_BLOCK, HARDENED_SUGAR_CANE_BLOCK}),
+            new CompressableBlockType("redstone_block", Blocks.REDSTONE_BLOCK, BlockTags.MINEABLE_WITH_PICKAXE, new Block[]{COMPRESSED_REDSTONE_BLOCK, SQUEEZED_REDSTONE_BLOCK, HARDENED_REDSTONE_BLOCK}),
+            new CompressableBlockType("gold_block", Blocks.GOLD_BLOCK, BlockTags.MINEABLE_WITH_PICKAXE, new Block[]{COMPRESSED_GOLD_BLOCK, SQUEEZED_GOLD_BLOCK, HARDENED_GOLD_BLOCK}),
+            new CompressableBlockType("bamboo_block", Blocks.BAMBOO_BLOCK, BlockTags.MINEABLE_WITH_AXE, new Block[]{COMPRESSED_BAMBOO_BLOCK, SQUEEZED_BAMBOO_BLOCK, HARDENED_BAMBOO_BLOCK}),
+            new CompressableBlockType("deepslate", Blocks.DEEPSLATE, BlockTags.MINEABLE_WITH_PICKAXE, new Block[]{COMPRESSED_DEEPSLATE, SQUEEZED_DEEPSLATE, HARDENED_DEEPSLATE}),
+            new CompressableBlockType("cobbled_deepslate", Blocks.COBBLED_DEEPSLATE, BlockTags.MINEABLE_WITH_PICKAXE, new Block[]{COMPRESSED_COBBLED_DEEPSLATE, SQUEEZED_COBBLED_DEEPSLATE, HARDENED_COBBLED_DEEPSLATE}),
+            new CompressableBlockType("dirt", Blocks.DIRT, BlockTags.MINEABLE_WITH_SHOVEL, new Block[]{COMPRESSED_DIRT, SQUEEZED_DIRT, HARDENED_DIRT}),
+            new CompressableBlockType("grass_block", Blocks.GRASS_BLOCK, BlockTags.MINEABLE_WITH_SHOVEL, new Block[]{COMPRESSED_GRASS_BLOCK, SQUEEZED_GRASS_BLOCK, HARDENED_GRASS_BLOCK}),
+            new CompressableBlockType("cactus", Blocks.CACTUS, null, new Block[]{COMPRESSED_CACTUS, SQUEEZED_CACTUS, HARDENED_CACTUS}),
+            new CompressableBlockType("rotten_flesh", Items.ROTTEN_FLESH, BlockTags.MINEABLE_WITH_SHOVEL, new Block[]{ROTTEN_FLESH_BLOCK, COMPRESSED_ROTTEN_FLESH_BLOCK, SQUEEZED_ROTTEN_FLESH_BLOCK, HARDENED_ROTTEN_FLESH_BLOCK}),
     };
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
