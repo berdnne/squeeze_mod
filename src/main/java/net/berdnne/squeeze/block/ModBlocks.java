@@ -153,6 +153,107 @@ public class ModBlocks {
     public static final Block HARDENED_CACTUS = registerBlock("hardened_cactus",
             properties -> new Block(properties.strength(3.4f)
                     .sound(SoundType.WOOL)));
+    // Logs
+    public static final Block COMPRESSED_OAK_LOG = registerBlock("compressed_oak_log",
+            properties -> new Block(properties.strength(1.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block SQUEEZED_OAK_LOG = registerBlock("squeezed_oak_log",
+            properties -> new Block(properties.strength(2.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block HARDENED_OAK_LOG = registerBlock("hardened_oak_log",
+            properties -> new Block(properties.strength(3.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block COMPRESSED_SPRUCE_LOG = registerBlock("compressed_spruce_log",
+            properties -> new Block(properties.strength(1.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block SQUEEZED_SPRUCE_LOG = registerBlock("squeezed_spruce_log",
+            properties -> new Block(properties.strength(2.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block HARDENED_SPRUCE_LOG = registerBlock("hardened_spruce_log",
+            properties -> new Block(properties.strength(3.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block COMPRESSED_BIRCH_LOG = registerBlock("compressed_birch_log",
+            properties -> new Block(properties.strength(1.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block SQUEEZED_BIRCH_LOG = registerBlock("squeezed_birch_log",
+            properties -> new Block(properties.strength(2.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block HARDENED_BIRCH_LOG = registerBlock("hardened_birch_log",
+            properties -> new Block(properties.strength(3.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block COMPRESSED_DARK_OAK_LOG = registerBlock("compressed_dark_oak_log",
+            properties -> new Block(properties.strength(1.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block SQUEEZED_DARK_OAK_LOG = registerBlock("squeezed_dark_oak_log",
+            properties -> new Block(properties.strength(2.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block HARDENED_DARK_OAK_LOG = registerBlock("hardened_dark_oak_log",
+            properties -> new Block(properties.strength(3.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block COMPRESSED_ACACIA_LOG = registerBlock("compressed_acacia_log",
+            properties -> new Block(properties.strength(1.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block SQUEEZED_ACACIA_LOG = registerBlock("squeezed_acacia_log",
+            properties -> new Block(properties.strength(2.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block HARDENED_ACACIA_LOG = registerBlock("hardened_acacia_log",
+            properties -> new Block(properties.strength(3.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block COMPRESSED_JUNGLE_LOG = registerBlock("compressed_jungle_log",
+            properties -> new Block(properties.strength(1.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block SQUEEZED_JUNGLE_LOG = registerBlock("squeezed_jungle_log",
+            properties -> new Block(properties.strength(2.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block HARDENED_JUNGLE_LOG = registerBlock("hardened_jungle_log",
+            properties -> new Block(properties.strength(3.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block COMPRESSED_MANGROVE_LOG = registerBlock("compressed_mangrove_log",
+            properties -> new Block(properties.strength(1.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block SQUEEZED_MANGROVE_LOG = registerBlock("squeezed_mangrove_log",
+            properties -> new Block(properties.strength(2.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block HARDENED_MANGROVE_LOG = registerBlock("hardened_mangrove_log",
+            properties -> new Block(properties.strength(3.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block COMPRESSED_CHERRY_LOG = registerBlock("compressed_cherry_log",
+            properties -> new Block(properties.strength(1.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block SQUEEZED_CHERRY_LOG = registerBlock("squeezed_cherry_log",
+            properties -> new Block(properties.strength(2.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block HARDENED_CHERRY_LOG = registerBlock("hardened_cherry_log",
+            properties -> new Block(properties.strength(3.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block COMPRESSED_PALE_OAK_LOG = registerBlock("compressed_pale_oak_log",
+            properties -> new Block(properties.strength(1.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block SQUEEZED_PALE_OAK_LOG = registerBlock("squeezed_pale_oak_log",
+            properties -> new Block(properties.strength(2.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block HARDENED_PALE_OAK_LOG = registerBlock("hardened_pale_oak_log",
+            properties -> new Block(properties.strength(3.5f)
+                    .sound(SoundType.WOOD)));
+    public static final Block COMPRESSED_CRIMSON_STEM = registerBlock("compressed_crimson_stem",
+            properties -> new Block(properties.strength(1.5f)
+                    .sound(SoundType.NETHER_WOOD)));
+    public static final Block SQUEEZED_CRIMSON_STEM = registerBlock("squeezed_crimson_stem",
+            properties -> new Block(properties.strength(2.5f)
+                    .sound(SoundType.NETHER_WOOD)));
+    public static final Block HARDENED_CRIMSON_STEM = registerBlock("hardened_crimson_stem",
+            properties -> new Block(properties.strength(3.5f)
+                    .sound(SoundType.NETHER_WOOD)));
+    public static final Block COMPRESSED_WARPED_STEM = registerBlock("compressed_warped_stem",
+            properties -> new Block(properties.strength(1.5f)
+                    .sound(SoundType.NETHER_WOOD)));
+    public static final Block SQUEEZED_WARPED_STEM = registerBlock("squeezed_warped_stem",
+            properties -> new Block(properties.strength(2.5f)
+                    .sound(SoundType.NETHER_WOOD)));
+    public static final Block HARDENED_WARPED_STEM = registerBlock("hardened_warped_stem",
+            properties -> new Block(properties.strength(3.5f)
+                    .sound(SoundType.NETHER_WOOD)));
+
 
     public static final CompressableBlockType[] COMPRESSABLE_BLOCK_TYPES = new CompressableBlockType[]{
             new CompressableBlockType("stone", Blocks.STONE, BlockTags.MINEABLE_WITH_PICKAXE, new Block[]{COMPRESSED_STONE, SQUEEZED_STONE, HARDENED_STONE}),
@@ -169,6 +270,17 @@ public class ModBlocks {
             new CompressableBlockType("grass_block", Blocks.GRASS_BLOCK, BlockTags.MINEABLE_WITH_SHOVEL, new Block[]{COMPRESSED_GRASS_BLOCK, SQUEEZED_GRASS_BLOCK, HARDENED_GRASS_BLOCK}),
             new CompressableBlockType("cactus", Blocks.CACTUS, null, new Block[]{COMPRESSED_CACTUS, SQUEEZED_CACTUS, HARDENED_CACTUS}),
             new CompressableBlockType("rotten_flesh", Items.ROTTEN_FLESH, BlockTags.MINEABLE_WITH_SHOVEL, new Block[]{ROTTEN_FLESH_BLOCK, COMPRESSED_ROTTEN_FLESH_BLOCK, SQUEEZED_ROTTEN_FLESH_BLOCK, HARDENED_ROTTEN_FLESH_BLOCK}),
+            new CompressableBlockType("oak_log", Blocks.OAK_LOG, BlockTags.MINEABLE_WITH_AXE, new Block[]{COMPRESSED_OAK_LOG, SQUEEZED_OAK_LOG, HARDENED_OAK_LOG}),
+            new CompressableBlockType("spruce_log", Blocks.SPRUCE_LOG, BlockTags.MINEABLE_WITH_AXE, new Block[]{COMPRESSED_SPRUCE_LOG, SQUEEZED_SPRUCE_LOG, HARDENED_SPRUCE_LOG}),
+            new CompressableBlockType("birch_log", Blocks.BIRCH_LOG, BlockTags.MINEABLE_WITH_AXE, new Block[]{COMPRESSED_BIRCH_LOG, SQUEEZED_BIRCH_LOG, HARDENED_BIRCH_LOG}),
+            new CompressableBlockType("dark_oak_log", Blocks.DARK_OAK_LOG, BlockTags.MINEABLE_WITH_AXE, new Block[]{COMPRESSED_DARK_OAK_LOG, SQUEEZED_DARK_OAK_LOG, HARDENED_DARK_OAK_LOG}),
+            new CompressableBlockType("acacia_log", Blocks.ACACIA_LOG, BlockTags.MINEABLE_WITH_AXE, new Block[]{COMPRESSED_ACACIA_LOG, SQUEEZED_ACACIA_LOG, HARDENED_ACACIA_LOG}),
+            new CompressableBlockType("jungle_log", Blocks.JUNGLE_LOG, BlockTags.MINEABLE_WITH_AXE, new Block[]{COMPRESSED_JUNGLE_LOG, SQUEEZED_JUNGLE_LOG, HARDENED_JUNGLE_LOG}),
+            new CompressableBlockType("mangrove_log", Blocks.MANGROVE_LOG, BlockTags.MINEABLE_WITH_AXE, new Block[]{COMPRESSED_MANGROVE_LOG, SQUEEZED_MANGROVE_LOG, HARDENED_MANGROVE_LOG}),
+            new CompressableBlockType("crimson_stem", Blocks.CRIMSON_STEM, BlockTags.MINEABLE_WITH_AXE, new Block[]{COMPRESSED_CRIMSON_STEM, SQUEEZED_CRIMSON_STEM, HARDENED_CRIMSON_STEM}),
+            new CompressableBlockType("warped_stem", Blocks.WARPED_STEM, BlockTags.MINEABLE_WITH_AXE, new Block[]{COMPRESSED_WARPED_STEM, SQUEEZED_WARPED_STEM, HARDENED_WARPED_STEM}),
+            new CompressableBlockType("pale_oak_log", Blocks.PALE_OAK_LOG, BlockTags.MINEABLE_WITH_AXE, new Block[]{COMPRESSED_PALE_OAK_LOG, SQUEEZED_PALE_OAK_LOG, HARDENED_PALE_OAK_LOG}),
+            new CompressableBlockType("cherry_log", Blocks.CHERRY_LOG, BlockTags.MINEABLE_WITH_AXE, new Block[]{COMPRESSED_CHERRY_LOG, SQUEEZED_CHERRY_LOG, HARDENED_CHERRY_LOG}),
     };
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {

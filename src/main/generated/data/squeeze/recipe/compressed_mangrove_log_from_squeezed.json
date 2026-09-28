@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "mangrove_log",
+  "ingredients": [
+    "squeeze:squeezed_mangrove_log"
+  ],
+  "result": {
+    "count": 9,
+    "id": "squeeze:compressed_mangrove_log"
+  }
+}

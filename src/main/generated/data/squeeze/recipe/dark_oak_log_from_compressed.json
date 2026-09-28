@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "dark_oak_log",
+  "ingredients": [
+    "squeeze:compressed_dark_oak_log"
+  ],
+  "result": {
+    "count": 9,
+    "id": "minecraft:dark_oak_log"
+  }
+}

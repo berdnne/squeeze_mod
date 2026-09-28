@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spruce_log",
+  "ingredients": [
+    "squeeze:hardened_spruce_log"
+  ],
+  "result": {
+    "count": 9,
+    "id": "squeeze:squeezed_spruce_log"
+  }
+}

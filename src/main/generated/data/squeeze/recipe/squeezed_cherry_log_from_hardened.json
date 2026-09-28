@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "cherry_log",
+  "ingredients": [
+    "squeeze:hardened_cherry_log"
+  ],
+  "result": {
+    "count": 9,
+    "id": "squeeze:squeezed_cherry_log"
+  }
+}

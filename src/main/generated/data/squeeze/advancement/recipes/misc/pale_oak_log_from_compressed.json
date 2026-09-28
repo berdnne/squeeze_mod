@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_compressed_pale_oak_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "squeeze:compressed_pale_oak_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "squeeze:pale_oak_log_from_compressed"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_compressed_pale_oak_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "squeeze:pale_oak_log_from_compressed"
+    ]
+  }
+}

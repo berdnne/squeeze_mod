@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_compressed_warped_stem": {
+      "conditions": {
+        "items": [
+          {
+            "items": "squeeze:compressed_warped_stem"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "squeeze:squeezed_warped_stem"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_compressed_warped_stem"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "squeeze:squeezed_warped_stem"
+    ]
+  }
+}

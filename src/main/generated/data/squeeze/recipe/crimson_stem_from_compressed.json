@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "crimson_stem",
+  "ingredients": [
+    "squeeze:compressed_crimson_stem"
+  ],
+  "result": {
+    "count": 9,
+    "id": "minecraft:crimson_stem"
+  }
+}
