@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "squeeze:block/hardened_pale_oak_log"
+  }
+}

@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "misc",
   "group": "iron_block",
   "ingredients": [
     "squeeze:squeezed_iron_block"

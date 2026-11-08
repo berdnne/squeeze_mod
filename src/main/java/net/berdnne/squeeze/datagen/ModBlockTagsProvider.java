@@ -19,7 +19,7 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         for (CompressableBlockType cbt : COMPRESSABLE_BLOCK_TYPES) {
-            if (cbt.tool() == null) return;
+            if (cbt.tool() == null) continue;
             for (Block block : cbt.tiers()) {
                 valueLookupBuilder(cbt.tool()).add(block);
             }

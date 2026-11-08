@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "jungle_log",
+  "ingredients": [
+    "squeeze:hardened_jungle_log"
+  ],
+  "result": {
+    "count": 9,
+    "id": "squeeze:squeezed_jungle_log"
+  }
+}
