@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:hardened_sugar_cane_block"
+        "recipes": "squeeze:hardened_sugar_cane_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

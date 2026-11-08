@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:squeezed_stone"
+        "recipes": "squeeze:squeezed_stone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

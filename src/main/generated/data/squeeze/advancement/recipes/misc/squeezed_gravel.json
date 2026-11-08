@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:squeezed_gravel"
+        "recipes": "squeeze:squeezed_gravel"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:compressed_oak_log"
+        "recipes": "squeeze:compressed_oak_log"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

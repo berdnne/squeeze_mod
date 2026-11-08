@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:compressed_iron_block"
+        "recipes": "squeeze:compressed_iron_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

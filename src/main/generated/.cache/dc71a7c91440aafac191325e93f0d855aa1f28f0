@@ -1,0 +1,6 @@
+// 26.3	-999999999-01-01T00:00:00	Squeeze/Tags for minecraft:block
+e9ad2eee9b741e124a9f1cb862d1a01b2c542a4a data/minecraft/tags/block/mineable/axe.json
+2262c8375ba9a2a970d0fb06e3337a835370a9be data/minecraft/tags/block/mineable/hoe.json
+8b3ad3b5555b0e70a4acd048f1e2632b014220ce data/minecraft/tags/block/mineable/pickaxe.json
+e8d97614827c5e248b1eba8b7d793a1f656d4a52 data/minecraft/tags/block/mineable/shovel.json
+bf792bc6415e935d8a225f00c0e6f789483e0ba7 data/minecraft/tags/block/needs_stone_tool.json

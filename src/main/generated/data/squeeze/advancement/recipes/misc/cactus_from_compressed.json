@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:cactus_from_compressed"
+        "recipes": "squeeze:cactus_from_compressed"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

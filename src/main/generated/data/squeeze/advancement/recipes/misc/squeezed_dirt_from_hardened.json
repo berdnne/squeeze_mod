@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:squeezed_dirt_from_hardened"
+        "recipes": "squeeze:squeezed_dirt_from_hardened"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

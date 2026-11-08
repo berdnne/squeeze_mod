@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:compressed_redstone_block"
+        "recipes": "squeeze:compressed_redstone_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

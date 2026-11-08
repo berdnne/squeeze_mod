@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:squeezed_pale_oak_log_from_hardened"
+        "recipes": "squeeze:squeezed_pale_oak_log_from_hardened"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

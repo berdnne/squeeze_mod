@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:compressed_deepslate"
+        "recipes": "squeeze:compressed_deepslate"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

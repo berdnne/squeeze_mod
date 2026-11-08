@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:crimson_stem_from_compressed"
+        "recipes": "squeeze:crimson_stem_from_compressed"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

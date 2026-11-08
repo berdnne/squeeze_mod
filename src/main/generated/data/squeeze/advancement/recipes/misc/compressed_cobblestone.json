@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:compressed_cobblestone"
+        "recipes": "squeeze:compressed_cobblestone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

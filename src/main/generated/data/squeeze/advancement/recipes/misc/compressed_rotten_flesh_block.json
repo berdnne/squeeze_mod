@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:compressed_rotten_flesh_block"
+        "recipes": "squeeze:compressed_rotten_flesh_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

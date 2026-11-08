@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:hardened_mangrove_log"
+        "recipes": "squeeze:hardened_mangrove_log"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

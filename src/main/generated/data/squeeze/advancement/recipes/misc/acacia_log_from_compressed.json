@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:acacia_log_from_compressed"
+        "recipes": "squeeze:acacia_log_from_compressed"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

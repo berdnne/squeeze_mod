@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:compressed_sand_from_squeezed"
+        "recipes": "squeeze:compressed_sand_from_squeezed"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

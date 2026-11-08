@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:gold_block_from_compressed"
+        "recipes": "squeeze:gold_block_from_compressed"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

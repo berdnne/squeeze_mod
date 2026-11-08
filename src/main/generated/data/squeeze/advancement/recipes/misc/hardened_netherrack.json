@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squeeze:hardened_netherrack"
+        "recipes": "squeeze:hardened_netherrack"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
