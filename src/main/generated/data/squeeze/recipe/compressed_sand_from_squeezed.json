@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "sand",
+  "ingredients": [
+    "squeeze:squeezed_sand"
+  ],
+  "result": {
+    "count": 9,
+    "id": "squeeze:compressed_sand"
+  }
+}

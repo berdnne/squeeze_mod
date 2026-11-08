@@ -76,5 +76,14 @@
   "block.squeeze.hardened_pale_oak_log": "Hardened Pale Oak Log",
   "block.squeeze.compressed_cherry_log": "Compressed Cherry Log",
   "block.squeeze.squeezed_cherry_log": "Squeezed Cherry Log",
-  "block.squeeze.hardened_cherry_log": "Hardened Cherry Log"
+  "block.squeeze.hardened_cherry_log": "Hardened Cherry Log",
+  "block.squeeze.compressed_sand": "Compressed Sand",
+  "block.squeeze.squeezed_sand": "Squeezed Sand",
+  "block.squeeze.hardened_sand": "Hardened Sand",
+  "block.squeeze.compressed_red_sand": "Compressed Red Sand",
+  "block.squeeze.squeezed_red_sand": "Squeezed Red Sand",
+  "block.squeeze.hardened_red_sand": "Hardened Red Sand",
+  "block.squeeze.compressed_gravel": "Compressed Gravel",
+  "block.squeeze.squeezed_gravel": "Squeezed Gravel",
+  "block.squeeze.hardened_gravel": "Hardened Gravel"
 }
