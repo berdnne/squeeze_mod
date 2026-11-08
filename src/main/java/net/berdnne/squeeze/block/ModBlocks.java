@@ -129,6 +129,10 @@ public class ModBlocks {
     public static final Block SQUEEZED_WARPED_STEM = registerPillarVariant("squeezed_warped_stem", Blocks.WARPED_STEM);
     public static final Block HARDENED_WARPED_STEM = registerPillarVariant("hardened_warped_stem", Blocks.WARPED_STEM);
 
+    public static final Block COMPRESSED_POPLAR_LOG = registerPillarVariant("compressed_poplar_log", Blocks.POPLAR_LOG);
+    public static final Block SQUEEZED_POPLAR_LOG = registerPillarVariant("squeezed_poplar_log", Blocks.POPLAR_LOG);
+    public static final Block HARDENED_POPLAR_LOG = registerPillarVariant("hardened_poplar_log", Blocks.POPLAR_LOG);
+
     public static final Block COMPRESSED_SAND = registerVariant("compressed_sand", Blocks.SAND);
     public static final Block SQUEEZED_SAND = registerVariant("squeezed_sand", Blocks.SAND);
     public static final Block HARDENED_SAND = registerVariant("hardened_sand", Blocks.SAND);
@@ -166,6 +170,7 @@ public class ModBlocks {
             new CompressableBlockType("crimson_stem", Blocks.CRIMSON_STEM, BlockTags.MINEABLE_WITH_AXE, new Block[]{COMPRESSED_CRIMSON_STEM, SQUEEZED_CRIMSON_STEM, HARDENED_CRIMSON_STEM}),
             new CompressableBlockType("warped_stem", Blocks.WARPED_STEM, BlockTags.MINEABLE_WITH_AXE, new Block[]{COMPRESSED_WARPED_STEM, SQUEEZED_WARPED_STEM, HARDENED_WARPED_STEM}),
             new CompressableBlockType("pale_oak_log", Blocks.PALE_OAK_LOG, BlockTags.MINEABLE_WITH_AXE, new Block[]{COMPRESSED_PALE_OAK_LOG, SQUEEZED_PALE_OAK_LOG, HARDENED_PALE_OAK_LOG}),
+            new CompressableBlockType("poplar_log", Blocks.POPLAR_LOG, BlockTags.MINEABLE_WITH_AXE, new Block[]{COMPRESSED_POPLAR_LOG, SQUEEZED_POPLAR_LOG, HARDENED_POPLAR_LOG}),
             new CompressableBlockType("cherry_log", Blocks.CHERRY_LOG, BlockTags.MINEABLE_WITH_AXE, new Block[]{COMPRESSED_CHERRY_LOG, SQUEEZED_CHERRY_LOG, HARDENED_CHERRY_LOG}),
             new CompressableBlockType("sand", Blocks.SAND, BlockTags.MINEABLE_WITH_SHOVEL, new Block[]{COMPRESSED_SAND, SQUEEZED_SAND, HARDENED_SAND}),
             new CompressableBlockType("red_sand", Blocks.RED_SAND, BlockTags.MINEABLE_WITH_SHOVEL, new Block[]{COMPRESSED_RED_SAND, SQUEEZED_RED_SAND, HARDENED_RED_SAND}),

@@ -33,6 +33,9 @@
     "squeeze:compressed_pale_oak_log",
     "squeeze:squeezed_pale_oak_log",
     "squeeze:hardened_pale_oak_log",
+    "squeeze:compressed_poplar_log",
+    "squeeze:squeezed_poplar_log",
+    "squeeze:hardened_poplar_log",
     "squeeze:compressed_cherry_log",
     "squeeze:squeezed_cherry_log",
     "squeeze:hardened_cherry_log"

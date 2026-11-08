@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "poplar_log",
+  "ingredients": [
+    "squeeze:hardened_poplar_log"
+  ],
+  "result": {
+    "count": 9,
+    "id": "squeeze:squeezed_poplar_log"
+  }
+}
