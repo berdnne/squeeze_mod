@@ -88,5 +88,9 @@
   "block.squeeze.hardened_red_sand": "Hardened Red Sand",
   "block.squeeze.compressed_gravel": "Compressed Gravel",
   "block.squeeze.squeezed_gravel": "Squeezed Gravel",
-  "block.squeeze.hardened_gravel": "Hardened Gravel"
+  "block.squeeze.hardened_gravel": "Hardened Gravel",
+  "block.squeeze.gunpowder_block": "Block of Gunpowder",
+  "block.squeeze.compressed_gunpowder_block": "Compressed Gunpowder Block",
+  "block.squeeze.squeezed_gunpowder_block": "Squeezed Gunpowder Block",
+  "block.squeeze.hardened_gunpowder_block": "Hardened Gunpowder Block"
 }

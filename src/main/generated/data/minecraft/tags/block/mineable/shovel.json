@@ -18,6 +18,10 @@
     "squeeze:hardened_red_sand",
     "squeeze:compressed_gravel",
     "squeeze:squeezed_gravel",
-    "squeeze:hardened_gravel"
+    "squeeze:hardened_gravel",
+    "squeeze:gunpowder_block",
+    "squeeze:compressed_gunpowder_block",
+    "squeeze:squeezed_gunpowder_block",
+    "squeeze:hardened_gunpowder_block"
   ]
 }

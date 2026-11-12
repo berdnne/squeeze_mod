@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gunpowder",
+  "ingredients": [
+    "squeeze:squeezed_gunpowder_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "squeeze:compressed_gunpowder_block"
+  }
+}

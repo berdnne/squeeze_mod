@@ -10,15 +10,12 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.BlockSetType;
 
-import java.util.HashMap;
 import java.util.function.Function;
 
 public class ModBlocks {
@@ -145,6 +142,13 @@ public class ModBlocks {
     public static final Block SQUEEZED_GRAVEL = registerVariant("squeezed_gravel", Blocks.GRAVEL);
     public static final Block HARDENED_GRAVEL = registerVariant("hardened_gravel", Blocks.GRAVEL);
 
+    public static final Block GUNPOWDER_BLOCK = registerBlock("gunpowder_block",
+            properties -> new Block(properties.strength(1.5f)
+                    .sound(SoundType.SAND)));
+    public static final Block COMPRESSED_GUNPOWDER_BLOCK = registerVariant("compressed_gunpowder_block", GUNPOWDER_BLOCK);
+    public static final Block SQUEEZED_GUNPOWDER_BLOCK = registerVariant("squeezed_gunpowder_block", GUNPOWDER_BLOCK);
+    public static final Block HARDENED_GUNPOWDER_BLOCK = registerVariant("hardened_gunpowder_block", GUNPOWDER_BLOCK);
+
     public static final CompressableBlockType[] COMPRESSABLE_BLOCK_TYPES = new CompressableBlockType[]{
             new CompressableBlockType("stone", Blocks.STONE, BlockTags.MINEABLE_WITH_PICKAXE, new Block[]{COMPRESSED_STONE, SQUEEZED_STONE, HARDENED_STONE}),
             new CompressableBlockType("cobblestone", Blocks.COBBLESTONE, BlockTags.MINEABLE_WITH_PICKAXE, new Block[]{COMPRESSED_COBBLESTONE, SQUEEZED_COBBLESTONE, HARDENED_COBBLESTONE}),
@@ -175,6 +179,7 @@ public class ModBlocks {
             new CompressableBlockType("sand", Blocks.SAND, BlockTags.MINEABLE_WITH_SHOVEL, new Block[]{COMPRESSED_SAND, SQUEEZED_SAND, HARDENED_SAND}),
             new CompressableBlockType("red_sand", Blocks.RED_SAND, BlockTags.MINEABLE_WITH_SHOVEL, new Block[]{COMPRESSED_RED_SAND, SQUEEZED_RED_SAND, HARDENED_RED_SAND}),
             new CompressableBlockType("gravel", Blocks.GRAVEL, BlockTags.MINEABLE_WITH_SHOVEL, new Block[]{COMPRESSED_GRAVEL, SQUEEZED_GRAVEL, HARDENED_GRAVEL}),
+            new CompressableBlockType("gunpowder", Items.GUNPOWDER, BlockTags.MINEABLE_WITH_SHOVEL, new Block[]{GUNPOWDER_BLOCK, COMPRESSED_GUNPOWDER_BLOCK, SQUEEZED_GUNPOWDER_BLOCK, HARDENED_GUNPOWDER_BLOCK}),
     };
 
     private static Block registerVariant(String name, Block templateBlock) {
